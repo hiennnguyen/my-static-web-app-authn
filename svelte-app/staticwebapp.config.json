@@ -17,5 +17,16 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["*.{css,scss,js,png,gif,ico,jpg,svg}"]
-  }
+  },
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/4ac85a7b-b500-432e-9b71-c5c000d2ad2a/v2.0",
+          "clientIdSettingName": "AAD_CLIENT_ID",
+          "clientSecretSettingName": "AAD_CLIENT_SECRET"
+        }
+      }
+    }
+  }  
 }
