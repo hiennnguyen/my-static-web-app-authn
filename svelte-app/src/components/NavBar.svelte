@@ -45,8 +45,8 @@
     <div class="menu-list auth">
       {#if !userInfo}
         {#each providers as provider (provider)}
-          <!--<a href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>-->
-          <a href={`https://awesomettt.b2clogin.com/AwesomeTTT.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_sign-up-and-sign-in&client_id=5b7e0f4e-3282-461f-863a-3cb64959d189&nonce=defaultNonce&redirect_uri=http%3A%2F%2Flocalhost%3A5000&scope=openid&response_type=code&prompt=login&code_challenge_method=S256&code_challenge=xgSdvSaZhshBz4dg4-GavPiktz46xRmKM-eXV8ka5P0`}>
+          <a href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
+          <!--<a href={`https://awesomettt.b2clogin.com/AwesomeTTT.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_sign-up-and-sign-in&client_id=5b7e0f4e-3282-461f-863a-3cb64959d189&nonce=defaultNonce&redirect_uri=http%3A%2F%2Flocalhost%3A5000&scope=openid&response_type=code&prompt=login&code_challenge_method=S256&code_challenge=xgSdvSaZhshBz4dg4-GavPiktz46xRmKM-eXV8ka5P0`}-->
             {provider}
           </a>
         {/each}
