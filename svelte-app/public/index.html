@@ -17,6 +17,18 @@
     <link rel="stylesheet" href="/build/bundle.css" />
 
     <script defer src="/build/bundle.js"></script>
+    <script src="https://alcdn.msauth.net/browser/2.14.2/js/msal-browser.min.js" integrity="sha384-ggh+EF1aSqm+Y4yvv2n17KpurNcZTeYtUZUvhPziElsstmIEubyEB6AIVpKLuZgr" crossorigin="anonymous"></script>
+    
+    <!-- Importing app scripts (load order is important) -->
+    <script type="text/javascript" src="./apiConfig.js"></script>
+    <script type="text/javascript" src="./policies.js"></script>
+    <script type="text/javascript" src="./authConfig.js"></script>
+    <script type="text/javascript" src="./ui.js"></script>
+
+    <!-- <script type="text/javascript" src="./authRedirect.js"></script>   -->
+    <!-- uncomment the above line and comment the line below if you would like to use the redirect flow -->
+    <script type="text/javascript" src="./authRedirect.js"></script>
+    <script type="text/javascript" src="./api.js"></script>
   </head>
 
   <body>
